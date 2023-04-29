@@ -1,0 +1,374 @@
+:root {
+    --danger: #dc3545;
+    --white: #fff;
+    --dark: #373A3C;  
+    --black: #000;
+    --light: #dddddd;
+    --info: #0DCAF0;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.divider {
+    width:60%;
+    margin:0 auto;
+    background-color: var(--dark);
+    opacity: 40%;
+}
+
+.section-title {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Navbar */
+.navbar{
+    max-width:100%;
+    font-family: Open Sans, sans-serif;
+    color: var(--white);
+}
+
+.navbar-brand {
+    opacity: 90%;
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger8.svg?');
+    border: transparent;
+    color: var(--dark);
+}
+
+.navbar-toggler {
+    border: transparent;
+}
+
+.navbar-toggler:focus {
+outline: 0;
+box-shadow: none;
+}
+
+.navbar-collapse {
+    opacity: 90%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: 1.2em;
+        opacity: 80%;
+    }
+    .logo {
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .navbar-brand {
+        font-size: 1.2em;
+        opacity: 80%;
+    }
+    .logo {
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo {
+        width: 2em;
+        height: 2em;
+    }
+    
+}
+
+/* Header Section */
+
+@media only screen and (max-width: 600px) {
+    .carousel img{
+        width: 100%;
+        height: 20em;
+    }
+    .carousel-control {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .carousel-control {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .carousel-control {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .carousel img{
+        width: 100%;
+        height: 59em;
+    }
+}
+
+/* About Us Section */
+.about-us {
+    color: var(--white);
+    font-family: Open Sans, sans-serif;
+}
+
+
+.rectangle {
+    height: 35px;
+    width: 100%;
+    background-color: var(--info);
+}
+
+.about-us i{
+    font-size: 2em;
+}
+
+.info-text {
+    justify-content: start;
+    font-size: 1em;
+}
+.text-square {
+    margin: 0;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about-us {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #rectangle-lg {
+        display: none;
+    }
+    .about-us i{
+        padding-top: 0.3%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #rectangle-lg {
+        display: block;
+    }
+    #rectangle-sm {
+        display: none;
+    }
+}
+
+
+/* Feautured Section */
+.featured {
+    color: var(--white);
+    margin: 0 auto;
+    font-family: Open Sans, sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: none;
+}
+
+.card-img-top {
+    height: 15em;
+}
+
+.card-body {
+    background-color: var(--info);
+    color: var(--white);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+        margin: 2em 0 2em 3em;
+    }
+    .featured-cards {
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        width: 70%;
+        margin: 2em 0 2em 5em;
+    }
+    .featured-cards {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .featured-cards {
+        display: flex;
+        margin: 0 auto;
+    }
+    .card {
+        width: 45%;
+        margin: 2em 1em 2em 1em;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .featured-cards {
+        width: 70%;
+    }
+    .card {
+        width: 45%;
+        margin: 2em 1em 2em 0.5em;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .featured-cards {
+        width: 100%;
+    }
+    .card {
+        width: 23%;
+        margin: 2em 0 2em 0;
+    }
+}
+
+/* Form Section */
+.contact {
+    color: var(--white);
+    font-family: Open Sans, sans-serif;
+}
+
+.contact-form {
+    color: var(--white);
+}
+
+.send-button {
+    color: var(--white);
+    background-color: var(--info);
+    font-size: 0.8em;
+    width: 4.5em;
+    height: 2.5em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--info);
+    color: var(--white);
+    font-family: Roboto, sans-serif;
+}
+.footer-section {
+    margin: 0 auto;
+}
+.icons {
+    color: var(--white);
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-logo {
+        padding: 0;
+        justify-content: space-around;
+    }
+    .footer-section {
+        max-width: 80%;
+        display: block;
+    }
+    .fa-brands {
+        font-size: 1.5em;
+        margin: 0 0.2em;
+    }
+    .footer-icons {
+        justify-content: center;
+        margin-top: 0.5em;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .footer-logo {
+        padding: 0;
+        justify-content: space-around;
+    }
+    .footer-section {
+        max-width: 80%;
+        display: block;
+    }
+    .fa-brands {
+        font-size: 1.5em;
+        margin: 0 0.2em;
+    }
+    .footer-icons {
+        justify-content: center;
+        margin-top: 0.5em;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .footer-section {
+        max-width: 70%;
+        display: flex;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .footer-logo {
+        padding-top: 0.4em;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .footer-section {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .footer-logo {
+        justify-content: start;
+        padding-top: 0.9em;
+    }
+    .footer-icons {
+        justify-content: end;
+        font-size: 1.3em;
+    }
+    .fa-brands {
+        margin: 0 0.2em;
+    }
+    
+}
